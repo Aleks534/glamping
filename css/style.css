@@ -370,3 +370,57 @@ h1, h2, h3, h4, h5, h6 {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Герой секция - исправленная версия */
+.hero-section {
+    background: url('../images/01.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    background-color: rgba(40, 50, 30, 0.7); /* Полупрозрачный темно-зеленый */
+    backdrop-filter: blur(3px);
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 80%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text h1 {
+    color: #fff;
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text .lead {
+    color: #f8f8f8;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #4a5e36;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: #3a4d28;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
