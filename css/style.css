@@ -324,3 +324,49 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.hero-section {
+    position: relative;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero-text h1 {
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8), 
+                 0 0 20px rgba(0,0,0,0.6),
+                 0 0 30px rgba(0,0,0,0.4);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text .lead {
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.8),
+                 0 0 15px rgba(0,0,0,0.6);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #4a5e36;
+    border: 2px solid #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3a4d28;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
