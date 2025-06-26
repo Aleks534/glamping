@@ -1,1 +1,285 @@
+/* БАЗОВЫЕ СТИЛИ */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fffddf;
+}
 
+/* ТИПОГРАФИКА */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Waterway', cursive;
+    font-weight: 700;
+}
+
+/* ШАПКА И ПОДВАЛ */
+.navbar-dark, 
+.footer {
+    background-color: #232c16 !important;
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
+.hero-section {
+    background: url('../images/01.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* КНОПКИ */
+.btn-primary {
+    background-color: #3f4f28;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #1a2310;
+    transform: translateY(-2px);
+}
+
+/* СТРАНИЦА БРОНИРОВАНИЯ */
+.booking-page {
+    background: url('../images/01.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.booking-container {
+    background-color: rgba(255, 253, 223, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* АНИМАЦИИ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .booking-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
+
+/* Стили для Google Forms */
+.google-form-container {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.google-form-container iframe {
+    border: none;
+    min-height: 1400px;
+}
+
+/* Адаптация формы */
+@media (max-width: 768px) {
+    .google-form-container {
+        padding: 10px;
+    }
+    
+    .google-form-container iframe {
+        min-height: 1600px;
+    }
+}
+
+
+/* Стили для слайдера */
+.room-gallery {
+    height: 250px; /* Фиксированная высота */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Изображение заполняет слайд без искажений */
+}
+
+/* Кастомизация точек пагинации */
+.swiper-pagination-bullet {
+    background-color: #fff; /* Белые точки */
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3f4f28; /* Активная точка - цвет кнопок */
+    opacity: 1;
+}
+
+/* Стили для кнопок навигации (если добавлены) */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #3f4f28; /* Цвет стрелок */
+    padding: 0 15px;
+}
+
+
+/* Анимация появления элементов */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация для карточек */
+@keyframes cardHover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Анимация для кнопок */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Общие анимационные стили */
+.animate-on-scroll {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Эффекты при наведении */
+.card:hover {
+    animation: cardHover 0.5s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    animation: pulse 0.5s ease;
+}
+
+/* Анимация для героя */
+.hero-text {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Анимация для изображений */
+.img-scale {
+    transition: transform 0.5s ease;
+}
+
+.img-scale:hover {
+    transform: scale(1.03);
+}
+
+/* Анимация для навигации */
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3f4f28;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* Адаптивный iframe */
+.google-form-container {
+    overflow: hidden; /* Обрезает лишнее, если iframe выходит за границы */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-iframe {
+    border: none;
+    width: 100%;
+    min-height: 100vh; /* Занимает всю высоту экрана */
+}
+
+/* Настройки для мобильных */
+@media (max-width: 768px) {
+    .responsive-iframe {
+        min-height: 120vh; /* Увеличиваем высоту, если форма длинная */
+    }
+}
+
+
+.footer-thumbnail.original {
+    width: auto;
+    height: 60px;
+}
