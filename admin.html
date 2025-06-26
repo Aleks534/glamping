@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель администратора | Горный Рай</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fffddf;
+            font-family: 'Times New Roman', serif;
+            padding: 20px;
+        }
+        .password-prompt {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        #adminPanel {
+            display: none;
+            margin-top: 30px;
+        }
+        .table-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn-primary {
+            background-color: #3f4f28;
+            border-color: #3f4f28;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginForm" class="password-prompt">
+        <h2 class="text-center mb-4">Вход для администратора</h2>
+        <div class="mb-3">
+            <label for="passwordInput" class="form-label">Пароль</label>
+            <input type="password" id="passwordInput" class="form-control" placeholder="Введите пароль">
+        </div>
+        <button id="loginBtn" class="btn btn-primary w-100">Войти</button>
+    </div>
+
+    <div id="adminPanel" class="container">
+        <h1 class="mb-4">Бронирования</h1>
+        <div class="table-container">
+            <iframe
+                src="https://docs.google.com/spreadsheets/d/1MHk9PvYEer_POk0EcnZHtuc7d4jlWAhLMPD-IuKoT6I/edit?usp=sharing&rm=minimal&single=true&widget=true&headers=false"
+                width="100%"
+                height="800"
+                frameborder="0"
+            ></iframe>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            const password = document.getElementById('passwordInput').value;
+            if (password === "poiuy789") {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('adminPanel').style.display = 'block';
+                
+                // Обновляем iframe после входа
+                const iframe = document.querySelector('#adminPanel iframe');
+                iframe.src = iframe.src; // Перезагружаем iframe
+            } else {
+                alert("Неверный пароль!");
+            }
+        });
+    </script>
+</body>
+</html>

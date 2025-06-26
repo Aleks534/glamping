@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Глэмпинг-отель 'Горный Рай' - роскошный отдых в горах Кавказа">
+    <title>Глэмпинг-отель в горах | Горный Рай</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .footer-thumbnail {
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+        .footer-thumbnail:hover {
+            transform: scale(1.05);
+            border-color: rgba(255,255,255,0.3);
+        }
+        .footer-thumbnail.original {
+            width: auto;
+            height: 60px;
+            max-width: 120px; /* Ограничиваем максимальную ширину */
+        }
+        .footer-thumbnail.fixed {
+            width: 80px;
+            height: 60px;
+        }
+        .footer-photos {
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Горный Рай</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Переключить навигацию">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rooms.html">Номера</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Бронирование</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <p class="lead mb-4">Комфортный отдых в гармонии с природой</p>
+            <h1>Глэмпинг среди гор</h1>
+            <a href="booking.html" class="btn btn-primary">Забронировать</a>
+        </div>
+    </section>
+
+    <section class="container features py-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="images/7.jpg" alt="Горный пейзаж" class="img-fluid rounded" loading="lazy">
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="images/19.jpg" alt="Терраса с видом на горы" class="img-fluid rounded" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <address class="list-unstyled">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Кавказские горы, урочище Красная Поляна</p>
+                        <p class="mb-2"><i class="fas fa-phone me-2"></i> +7 (123) 456-78-90</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i> info@mountain-paradise.ru</p>
+                    </address>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Навигация</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Главная</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">О нас</a></li>
+                        <li class="mb-2"><a href="rooms.html" class="text-white text-decoration-none">Номера</a></li>
+                        <li class="mb-2"><a href="booking.html" class="text-white text-decoration-none">Бронирование</a></li>
+                        <li class="mb-2"><a href="contacts.html" class="text-white text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Мы в соцсетях</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-3" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Telegram"><i class="fab fa-telegram fa-lg"></i></a>
+                        <a href="#" class="text-white" aria-label="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                    <div class="footer-photos d-flex align-items-center mt-3">
+                        <img src="images/8.jpg" alt="Домик в горах" class="footer-thumbnail original rounded" height="60" loading="lazy">
+                        <img src="images/19.jpg" alt="Терраса с видом" class="footer-thumbnail fixed rounded" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">© 2024 Глэмпинг-отель "Горный Рай". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши номера</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Дополнительные стили для слайдера */
+        .room-gallery {
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-pagination-bullet {
+            background-color: #fff;
+            opacity: 0.7;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #3f4f28;
+            opacity: 1;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #3f4f28;
+            padding: 0 15px;
+        }
+        @media (min-width: 768px) {
+            .room-gallery {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Горный Рай</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="rooms.html">Проживание</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Бронирование</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container rooms-container my-5">
+        <h1 class="mb-4">Наши номера</h1>
+        <div class="row">
+            <div class="col-md-4 room-item mb-4">
+                <div class="swiper room-gallery mb-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/001.jpg" alt="Номер Стандарт - вид 1" class="img-fluid rounded" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/1.jpg" alt="Номер Стандарт - вид 2" class="img-fluid rounded" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/8.jpg" alt="Номер Стандарт - вид 3" class="img-fluid rounded" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/16.jpg" alt="Номер Стандарт - вид 4" class="img-fluid rounded" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <h3>Стандарт</h3>
+                <ul class="mb-3">
+                    <li>Площадь: 25 м²</li>
+                    <li>Двуспальная кровать</li>
+                    <li>Собственная терраса</li>
+                    <li><strong>от 5,000 руб./ночь</strong></li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary">Забронировать</a>
+            </div>
+            <div class="col-md-4 room-item mb-4">
+                <div class="swiper room-gallery mb-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/002.jpg" alt="Номер Комфорт - вид 1" class="img-fluid rounded" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/21.jpg" alt="Номер Комфорт - вид 2" class="img-fluid rounded" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/25.jpg" alt="Номер Комфорт - вид 3" class="img-fluid rounded" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <h3>Комфорт</h3>
+                <ul class="mb-3">
+                    <li>Площадь: 35 м²</li>
+                    <li>Двуспальная кровать + диван</li>
+                    <li>Панорамные окна</li>
+                    <li><strong>от 8,000 руб./ночь</strong></li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary">Забронировать</a>
+            </div>
+            <div class="col-md-4 room-item mb-4">
+                <div class="swiper room-gallery mb-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/003.jpg" alt="Номер Люкс - вид 1" class="img-fluid rounded" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/24.jpg" alt="Номер Люкс - вид 2" class="img-fluid rounded" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/26.jpg" alt="Номер Люкс - вид 3" class="img-fluid rounded" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <h3>Люкс</h3>
+                <ul class="mb-3">
+                    <li>Площадь: 50 м²</li>
+                    <li>Отдельная гостиная зона</li>
+                    <li>Гидромассажная ванна</li>
+                    <li><strong>от 12,000 руб./ночь</strong></li>
+                </ul>
+                <a href="booking.html" class="btn btn-primary">Забронировать</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Полный подвал для всех страниц -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Колонка 1: Контакты -->
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">📍 Кавказские горы, урочище Красная Поляна</li>
+                        <li class="mb-2">📞 +7 (123) 456-78-90</li>
+                        <li class="mb-2">✉️ info@mountain-paradise.ru</li>
+                    </ul>
+                </div>
+                
+                <!-- Колонка 2: Навигация -->
+                <div class="col-md-4 mb-4">
+                    <h5>Навигация</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Главная</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">О нас</a></li>
+                        <li class="mb-2"><a href="rooms.html" class="text-white">Номера</a></li>
+                        <li class="mb-2"><a href="booking.html" class="text-white">Бронирование</a></li>
+                        <li class="mb-2"><a href="contacts.html" class="text-white">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Колонка 3: Соцсети и фото -->
+                <div class="col-md-4 mb-4">
+                    <h5>Мы в соцсетях</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                    <div class="footer-photos">
+                        <img src="images/8.jpg" alt="Домик" class="footer-thumbnail rounded me-2" width="80">
+                        <img src="images/19.jpg" alt="Терраса" class="footer-thumbnail rounded" width="80">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-light">
+            
+            <div class="text-center">
+                <p class="mb-0">© 2024 Глэмпинг-отель "Горный Рай". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение Font Awesome для иконок -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Подключение Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Инициализация слайдеров
+        document.addEventListener('DOMContentLoaded', function() {
+            const roomSliders = document.querySelectorAll('.room-gallery');
+            
+            roomSliders.forEach(slider => {
+                new Swiper(slider, {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        pauseOnMouseEnter: true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    lazy: {
+                        loadPrevNext: true,
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
